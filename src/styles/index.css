@@ -1,4 +1,11 @@
-.boxeffect {
+.boxtype {
   border: 3px;
   border-color: gray;
+}
+.Container{
+  height: 500px;
+  width: 500px;
+}
+ul {
+  list-style-type: none;
 }
