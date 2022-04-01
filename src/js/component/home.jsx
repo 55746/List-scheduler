@@ -3,8 +3,8 @@ import React, { useState } from "react";
 const Home = () => {
 	const [item, setItem] = useState("");
 	const [todolist, setTodolist] = useState([]);
-	const works = (x) => {
-		const par = todolist.filter((element) => element !== x);
+	const deletes = (x) => {
+		const par = todolist.filter((uniquekeyname) => uniquekeyname !== x);
 		setTodolist(par);
 	};
 	return (
@@ -21,7 +21,7 @@ const Home = () => {
 				<a
 					onClick={() => {
 						// setIte;
-						if (item == "") return alert("you cant do that Jimbo");
+						if (item === "") return alert("you cant do that Jimbo");
 						setTodolist([...todolist, item]);
 						setItem("");
 						console.log(item);
@@ -40,7 +40,7 @@ const Home = () => {
 							<a
 								className="ml-2 btn btn-danger"
 								onClick={() => {
-									works(item);
+									deletes(uniquekeyname);
 								}}>
 								X
 							</a>
