@@ -1,11 +1,17 @@
 .boxtype {
-  border: 3px;
-  border-color: gray;
+  display: flex;
+  margin: auto;
 }
 .Container{
-  height: 500px;
-  width: 500px;
+  height: 50%;
+  width: 50%;
+  border: 3px solid gray;
+  padding: 10px;
+  margin: auto;;
 }
 ul {
   list-style-type: none;
 }
+.deletekey{
+  display: flex;
+margin-left: auto;}
